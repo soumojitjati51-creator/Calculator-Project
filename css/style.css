@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111827;
+    font-weight: bold;
+}
+.outer{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #2563eb;
+    border-radius: 1rem;
+}
+.weltext{
+    color:white;
+    font-size:2rem;
+    padding:1rem;
+    border-radius: 1rem;
+}
+.welcome:hover{
+    box-shadow:0 15px 40px rgba(13, 62, 137, 0.4);
+}
+@media(max-width:1300px){
+    .weltext{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+@media(max-width:1100px){
+    .weltext{
+        font-size:1.3rem ;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+}
+@media(max-width:550px){
+    .weltext{
+        font-size:1rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+
+    }
+    .welcome{
+        width: 60vw;
+    }
+    
+}
+.firstlink{
+    border-radius: 2rem;
+}
+.firstbutton{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: white;
+    transition:transform 0.15s ease, background 0.15s ease;
+}
+.firstbutton:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);;
+    cursor:pointer;
+    background:#0d2566;
+    transform:scale(1.04);
+}
+@media(max-width:450px){
+    .firstbutton{
+        font-size: 0.5rem;
+    }
+    .welcome{
+        width: 70vw;
+    }
+}
+@media(max-width:800px){
+    .firstbutton{
+        font-size: 0.75rem;
+    }
+    .welcome{
+        width: 45vw;
+        text-align: center;
+    }
+}

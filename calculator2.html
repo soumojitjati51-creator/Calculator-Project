@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>SJ:Calculator:Commercial:calculation</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="workspace">
+            <div class="screen">
+                <input type="text" id="userinput" placeholder="Enter calculations" style="width: 100%; height:50%; background-color: white; font-size: 1.5rem;outline: none;border: none;" readonly>
+                <div class="useroutput" id="useroutput" style="display:flex;width: 100%; height:50%; background-color: white; font-size: 1.5rem;justify-content: right;"></div>
+            </div>
+            <div class="button-area">
+                <div class="button-set1">
+                    <div class="button"><button class="blue2" onclick="appendValue('7')">7</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('8')">8</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('9')">9</button></div>
+                </div>
+                <div class="button-set1">
+                    <div class="button"><button class="blue2" onclick="appendValue('4')">4</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('5')">5</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('6')">6</button></div>
+                </div>
+                <div class="button-set1">
+                    <div class="button"><button class="blue2" onclick="appendValue('1')">1</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('2')">2</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('3')">3</button></div>
+                </div>
+                <div class="button-set1">
+                    <div class="button"><button class="blue2" onclick="appendValue('√')">√</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('0')">0</button></div>
+                    <div class="button"><button class="blue2" onclick="appendValue('%')">%</button></div>
+                </div>
+                <div class="button-set2" style="gap: 2px;">
+                    <div class="button"><button class="blue2" onclick="appendValue('00')">00</button></div>
+                    <div class="button"><button class="blue2" onclick="muMode()">MU</button></div>
+                    <div class="button"><button class="blue2" onclick="plusPercentmode()">+%</button></div>
+                    <div class="button"><button class="blue2" onclick="minusPercentmode()">-%</button></div>
+                    
+                </div>
+
+                <div class="button-set2" style="gap: 2px;">
+                    <div class="button"><button class="blue2" onclick="showGT()">GT</button></div>
+                    <div class="button" ><button class="blue2" onclick="setTax()" style="width: 5rem;" id="special">TAX SET</button></div>
+                    <div class="button"><button class="blue2" onclick="plusTax()">TAX+</button></div>
+                    <div class="button"><button class="blue2" onclick="minusTax()">TAX-</button></div>
+                </div>
+
+                <div class="button-set2">
+                    <div class="button2"><button class="blue2" onclick="appendValue('+')">+</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue('-')">-</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue('*')">×</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue('/')">÷</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue('.')">.</button></div>
+                </div>
+                <div class="button-set2">
+                    <div class="button2"><button class="red" onclick="deleteValue()">Del</button></div>
+                    <div class="button2"><button class="orange" onclick="prevValue()">ANS</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue('(')">❨</button></div>
+                    <div class="button2"><button class="blue2" onclick="appendValue(')')">❩</button></div>
+                    <div class="button2"><button class="pink" onclick="clearValue()">AC</button></div>
+                    <div class="button2"><button  class="blue" onclick="calculate()">=</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
